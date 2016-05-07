@@ -127,11 +127,11 @@ class YeelightService:
         else:
             return "".join(["," for i in range(length)])
 
-    def turn_on(self):
+    def turn_on(self, brightness = 100):
         '''
         turn on the light with white and full brightness
         '''
-        self.control(255,255,255,100)
+        self.control(255,255,255,brightness)
 
     def turn_off(self):
         '''
